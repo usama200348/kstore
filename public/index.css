@@ -1,0 +1,191 @@
+/* General Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('./photo/160250033_padded_logo.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em;
+    font-size: 3rem;
+    color: #ffffff;
+    text-shadow: 9px 10px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Loader Styles */
+.loader {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    transform: rotate(165deg);
+    margin: 2em auto;
+}
+
+.loader:before,
+.loader:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 0.25em;
+    transform: translate(-50%, -50%);
+}
+
+.loader:before {
+    animation: before8 2s infinite;
+}
+
+.loader:after {
+    animation: after6 2s infinite;
+}
+
+@keyframes before8 {
+    /* Keyframes unchanged */
+}
+
+@keyframes after6 {
+    /* Keyframes unchanged */
+}
+
+/* Todo Styles */
+.todo-div {
+    padding: 20px;
+    font-size: 1.5rem;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: 2em auto;
+}
+
+.todo-div > span {
+    width: 100%;
+    display: block;
+    font-weight: 800;
+    color: #333;
+}
+
+/* Form Styles */
+#register-form,
+#login-form {
+    text-align: center;
+    margin: 2em;
+    font-weight: bolder;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+}
+
+#input:focus {
+    outline: none;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+#input {
+    margin: 1%;
+    width: 100%;
+    max-width: 352px;
+    height: 48px;
+    border: none;
+    border-radius: 25px;
+    padding: 0 1em;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+label {
+    margin-top: 1em;
+    display: block;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    max-width: 55rem;
+    height: 4em;
+    border: 2px solid black;
+    border-radius: 15px;
+    font-size: 1em;
+    font-weight: bolder;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    background: rgba(255, 255, 255, 0.8);
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+#btn {
+    width: 100%;
+    max-width: 25rem;
+    height: 3em;
+    border: none;
+    border-radius: 22px;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#btn:hover {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+}
+
+#button {
+    margin-bottom: 33px;
+}
+
+#fbbtn {
+    margin: 25px;
+    width: 100%;
+    max-width: 25rem;
+    height: 3em;
+    border: none;
+    border-radius: 22px;
+    background: linear-gradient(to right, darkblue, darkblue);
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#fbbtn:hover {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+}
+
+a {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #333;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: black;
+    text-decoration: underline;
+}

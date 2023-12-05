@@ -1,0 +1,15 @@
+img{
+    width:40px;
+     height: 40px;
+    
+}
+
+body{
+    background-image: url(../../photo/160250033_padded_logo.png);
+}
+#logout{
+    margin-right: 22px;
+    background-color: green;
+    color: white;
+    border: none;
+}
